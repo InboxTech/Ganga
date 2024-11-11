@@ -442,6 +442,8 @@
     const basicColor = config.colors_label.primary,
       highlightColor = config.colors.primary;
     var colorArr = [];
+    // let maxNum = arrayData[0];
+    // for()
 
     for (let i = 0; i < arrayData.length; i++) {
       if (i === highlightData) {
@@ -506,7 +508,7 @@
         enabled: false
       },
       xaxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
         axisBorder: {
           show: true,
           color: borderColor
