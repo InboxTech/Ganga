@@ -441,10 +441,7 @@
   function EarningReportsBarChart(arrayData, highlightData) {
     const basicColor = config.colors_label.primary,
       highlightColor = config.colors.primary;
-    var colorArr = [];
-    // let maxNum = arrayData[0];
-    // for()
-
+    
     for (let i = 0; i < arrayData.length; i++) {
       if (i === highlightData) {
         colorArr.push(highlightColor);
