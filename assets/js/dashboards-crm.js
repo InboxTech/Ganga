@@ -441,11 +441,13 @@
   function EarningReportsBarChart(arrayData, highlightData) {
     const basicColor = config.colors_label.primary,
       highlightColor = config.colors.primary;
+    var colorArr = [];
     
     for (let i = 0; i < arrayData.length; i++) {
       if (i === highlightData) {
         colorArr.push(highlightColor);
-      } else {
+      } 
+      else {
         colorArr.push(basicColor);
       }
     }
@@ -505,7 +507,7 @@
         enabled: false
       },
       xaxis: {
-        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov'],
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
         axisBorder: {
           show: true,
           color: borderColor
